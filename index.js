@@ -14,6 +14,7 @@ var lorem = new LoremIpsum({
     min: 4
   }
 });
+console.log('here');
 
 app.get('/', (req, res) => res.send(lorem.generateParagraphs(process.env.JOC_PARAGRAPHS)))
 
